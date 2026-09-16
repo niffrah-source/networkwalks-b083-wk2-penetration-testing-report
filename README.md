@@ -31,3 +31,18 @@ below are the list of tools used and their purpose
 ### 4.1 Footprinting and Reconnaissance
 I performed reconnaissance/footprinting against networkwalks to find information about target. I used six kali tools to collect information. firstly , i used WHOIS which give us all publicaly available information about domain name , registrar , domain ID , domain server etc. The second tool i used was whatweb which gives information about web technologies used like IP address , server , email , HTTP server and WordPress 7.0.4 and WP download manager. after that i used nslookup which resolves the domain name to it's IP address. it resolved networkwalks.com into 192.232.216.135. the fourth tool i used was curl -l  which provides us with all information about HTTP response headers , wordpress , type:applicaton/json , path. the 5th tool i used was wafw00f it tells us whether a firewall is protecting a site or not. we get the result that the site is behind modsecurity. the last kali tool i used is dnsrecon it tells us about all dns records (TXT , NS ) related to mail records.
 I also performed reconnaissance with maltego which is an OSINT tool it tells us which information is related to which person , compamy etc). I used the Transform → Utilities → To Email Address option to investigate email-related information. The transform used the information already available in the graph to identify related email information and display the relationships between the entities.
+## 4.2 Network Scanning with Zenmap
+For the second phase to perform scanning against networkwalks , I used Zenmap. This tool is used to scan IP addresses to find all live hosts , generate network topology. first I found my device's local IP address my running ipconfig command in cmd which in return gave my device IP address.Then by ping scanning my IP i was resulted with live hosts , MAC addresses and device's name that is connected. this way, i  identified live hosts and also saved network topology in pdf format as required in task. Below is the list of live host's IP addresses i found through ping scanning. I found 7 live hosts (including my own device).
+* 192.168.0.110
+* 192.168.0.1
+* 192.168.0.148
+* 192.168.0.165
+* 192.168.0.177
+* 192.168.0.180
+* 192.168.0.195
+## Risk analysis and impact
+based on the information collected during footprinting and network scanning activities i identified the following risks:
+### Risk/finding | Evidence/Observation | Potential Impact | Risk Level
+* 1. web information exposed | WordPress(7.1) , JSON , WP download manager |attackers can use this information and version to identify software| medium
+  2. IP address information| Nslookup resolved domain name to IP address 192.232.216.135| this revealed information about network address|low
+  3.  
