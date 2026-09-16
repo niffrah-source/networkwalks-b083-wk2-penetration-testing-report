@@ -45,4 +45,20 @@ based on the information collected during footprinting and network scanning acti
 ### Risk/finding | Evidence/Observation | Potential Impact | Risk Level
 * 1. web information exposed | WordPress(7.1) , JSON , WP download manager |attackers can use this information and version to identify software| medium
   2. IP address information| Nslookup resolved domain name to IP address 192.232.216.135| this revealed information about network address|low
-  3.  
+  3. revelead HTTP information| curl revealed HTTP response headers| May help attackers to find more clues | low
+  4.  WAF technology| wafw00f identified modsecurity| reveals information that whether a site is protected by firewall and can help attackers to know about security architecture | low
+  5.  DNS information identification| DNSRecon identified DNS , mail , records | DNS information can help build broader profile| medium
+  6.  contact and domain information exposure| maltego , tranform rule revealed the emails-related information| may reveal sensitive information like mails , domains | medium
+  7.  Live hosts visibility| Zenmap identified multiple live hosts and IP addresses in network|unauthorized devices present on network|medium.
+* The risks above are information collected from footprinting and scanning exercises however they are not confirmed vulnerabilities and not potentially lead to attack.
+## Recomendations
+based on above observations i reccomend following improvements:
+* organizations should review their publicaly available information.
+* keep software and applications updated.
+* Review HTTP headers to see if only required information is available.
+* properly configure firewall for additional security
+* investigate whether your network is connected to only authorized devices.
+* perform regular testing.
+* maintain proper documentation.
+## Conclusions:
+During week 2 , of my cybersecurity ethical hacking internship i worked mainly on its 2 phases: footprinting and scanning. First i understood what reconnaissance/footprinting means
