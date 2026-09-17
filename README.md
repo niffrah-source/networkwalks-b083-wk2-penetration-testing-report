@@ -61,7 +61,24 @@ based on above observations i reccomend following improvements:
 * perform regular testing.
 * maintain proper documentation.
 ## Conclusions:
-During week 2 , of my cybersecurity ethical hacking internship i worked mainly on its 2 phases: footprinting and scanning. First i understood what reconnaissance/footprinting means , what are the methods to collect data. I used 6 kali tools of task (W2-PM1) to gather all publically available data which provides much information about target's IP , domain , HTTP information. i used WHOIS , Whatweb , Nslookup , curl -I , wafw00f , dnsrecon. Then after collecting all the information from these kali tools. I used additional task(W2-PM3) tool Maltego to collect to reveal sensitive information like mails. Then in scanning phase i used (nmap GUI) zenmap. before scanning with nmap i identified my device's local IP by writing ipconfig in cmd which give me IP address 192.168.0.110 and ping scanning this IP i got to know live hosts.
+During week 2 , of my cybersecurity ethical hacking internship i worked mainly on its 2 phases: footprinting and scanning. First i understood what reconnaissance/footprinting means , what are the methods to collect data. I used 6 kali tools of task (W2-PM1) to gather all publically available data which provides much information about target's IP , domain , HTTP information. i used WHOIS , Whatweb , Nslookup , curl -I , wafw00f , dnsrecon. Then after collecting all the information from these kali tools. I used additional task(W2-PM3) tool. first i downloaded maltego and then used  Maltego to collect to reveal sensitive information like mails. Then in scanning phase i used (nmap GUI) zenmap. before scanning with nmap i identified my device's local IP by writing ipconfig in cmd which give me IP address 192.168.0.110 and ping scanning this IP i got to know live hosts.
 through this i got to know that information gathering is important part of cybersecurity. when gathering information we dont only get to know the type of information but also how to make use of that information to extract related information that is useful. A good cybersecurity professional documents every step and that's what it made me realize that how important documenting is. we can track changes and see what we did step by step. Finally, I learned that reconnaissance and scanning must always be performed within an authorized scope. These activities were completed as part of the assigned educational cybersecurity lab.
 ## Evidence Collected
+![task-report](img1.png)
+![task-report](img3.png)
+![task-report](img4.png)
+![task-report](img5.png)
+![task-report](img6.png)
+![task-report](img7.png)
+![task-report](img11.png)
+![task-report](img12.png)
+![task-report](img14.png)
+![task-report](img22.png)
+![task-report](img23.png)
+
+### Author: Iffrah Nauman
+* cybersecurity professional B083
+* Linkedin:
+  ### Project Information
+  #### Program Name:  Cybersecurity program at Networkwalks | Week: 02 | Repository: GitHub
 
