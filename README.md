@@ -78,7 +78,7 @@ through this i got to know that information gathering is important part of cyber
 
 ### Author: Iffrah Nauman
 * cybersecurity professional B083
-* Linkedin:
+* Linkedin: https://lnkd.in/p/djHjebJZ
   ### Project Information
   #### Program Name:  Cybersecurity program at Networkwalks | Week: 02 | Repository: GitHub
 
